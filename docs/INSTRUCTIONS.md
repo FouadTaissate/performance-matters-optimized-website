@@ -1,109 +1,129 @@
+# Server-Side Website
 
-# Look and Feel - Living Styleguide
+Ontwerp en ontwikkel een server-side website voor een opdrachtgever.
 
-Ontwerp en maak een *living styleguide* voor een opdrachtgever.
 
 ## Context
 
-Deze deeltaak hoort bij sprint 4 Look and Feel. Dit is een deeltaak die je in een team uitvoert, namelijk alle studenten die een project voor dezelfde opdrachtgever doen.
+Deze leertaak hoort bij sprint 8 "Server-Side Rendering". Dit is een leertaak die je individueel uitvoert voor een opdrachtgever.
 
-In de workshop Living Styleguide wordt uitgelegd wat een living styleguide is en wat het nut ervan is.
+In het college S08W1-01-Sprintplanning-server-side-rendering wordt uitgelegd wat je moet doen. Tijdens de sprintplanning met de opdrachtgever bespreek je de opdracht.
+
+Bij deze leertaak hoort de deeltaak:
+- [The Cient - Briefing/Debriefing](https://github.com/fdnd-task/the-client-briefing-debriefing/)
 
 
 ## Doel van deze opdracht
 
-> Living style guides are an important tool for web development today, especially in large, complex web applications. They help document styles and patterns, keep designers and developers in sync, and greatly help to organize and distill complex interfaces. (<cite>[Lambert, 2016](https://www.smashingmagazine.com/2016/05/creating-a-living-style-guide-case-study/))
+Je leert hoe je server-side data kunt gebruiken voor het maken van een website.
 
-Een living styleguide is essentieel voor het begrijpen en overbrengen van de look and feel van een website. Het geeft een gedeeld begrip van alle teamleden over hoe iets eruit moet zien en hoe markup (HTML) en vormgeving (CSS) moeten worden toegepast. Een living styleguide helpt bij het ontwerpen en bouwen van een website met consistente look and feel in de huisstijl van een opdrachtgever.
 
 ## Werkwijze
 
-Deze opdracht gaat over [analyseren](#analyseren) en [ontwerpen](#ontwerpen) van de DLC. In de analysefase breng je door het doen van een *interface audit* in kaart hoe het zit met de consistentie van de huidige uitingen van de opdrachtgever en welke huisstijl elementen in gebruik zijn. Het resultaat is een *interface inventory*. In de ontwerpfase maak je keuzes, bepaal je ontwerp standaarden en leg je vast hoe componenten in HTML en CSS opgenomen worden. 
+Voor deze leertaak krijg je eerst een sprintplanning met de opdrachtgever. Tijdens de sprintplanning bespreek je de taken van het project board en de content in de database. Elke opdrachtgever heeft content voor de website in een database. Met een een REST API kun je deze content gebruiken voor het maken van de website.
 
-Het resultaat is een levende - dat wil zeggen live, semantisch, toegankelijk en responsive - stijlgids welke gebruikt kan worden door alle frontenders in een organisatie. Welke kleuren en typografie worden gebruikt in de huisstijl? Wat zijn overeenkomstige elementen van de verschillende pagina's of componenten? Hoe ziet de layout van verschillende onderdelen eruit? Hoe gedraagt de website zich in verschillende contexten (responsive design). En tenslotte, welke HTML en CSS is nodig om de elementen van de living styleguide op te maken en vorm te geven?
+Voor deze opdracht doorloop je alle fases van de DLC [analyseren](#analyseren), [ontwerpen](#ontwerpen), [bouwen](#bouwen), [integreren](#integreren) en [testen](#testen).
+
 
 ### Analyseren
+In de analysefase inventariseer je wat er moet gebeuren om een taak uit te voeren.
 
-Je begint met het uitvoeren van een *interface audit* waarin je een gecategoriseerde opsomming maakt van de componenten waaruit jouw website, app, intranet, hatseflats of whatever opgebouwd is. Het resultaat van de audit is een *interface inventory*, een verzameling van alle atomen, moleculen en organismen van een interface.
+Bijvoorbeeld: grip krijgen op een taak door het voeren van een gesprek met jouw opdrachtgever, schrijven van een debriefing, inventarisatie van bestaande informatie, interface audit, interface inventory, planning, maken van een todo lijst en bepalen van definitions of done.
 
-Een *interface inventory* is een goed middel om een opdrachtgever of werkgever over te halen om extra tijd uit te trekken voor het vastleggen van een solide ontwerpsysteem. Het maken van een living-styleguide is een goed idee voor het consistent toepassen van een huisstijl, maar het kost wel tijd om er een te ontwikkelen. Het laten zien van inconsistentie door middel van een interface inventory kan overtuigend werken.
+#### User Stories
+Kies een of meerdere user stories uit de backlog van het project waar je aan gaat werken. De projecten staan bij [FDND Agency](https://github.com/fdnd-agency).
 
-**N.B: Jullie voeren de interface audit uit op alle gemaakte projecten voor de opdrachtgever. Dus kies de oorspronkelijke huisstijl én alle uitgewerkte user-stories!**
+Bekijk per user story welke content in de REST API staat.
 
-#### Voer een interface audit uit:
- 
- 1. **Open het project.** Zorg dat je weet hoe je specifieke screenshots moet maken (een selectie en niet je hele scherm).
- 2. **Zet een blanco template op.** Hier dump en categoriseer je de componenten van de interface. Doe dit bij voorkeur in de wiki van de deeltaak. Alles wat je nodig hebt zijn een categorie titel en een plek om screenshots te dumpen.
- 3. **Begin met screenshotten.** Nu het leuke gedeelte. Neem screenshots van de ingrediënten van jouw interface. Je doel is om unieke versies van componenten te vangen. Hier een mogelijke categorisering (kies wat van toepassing is op jouw project!):
-    - Globals: header, footer en andere globale elementen
-    - Navigatie: primair, footer, paginering, kruimelpad, …
-    - Afbeeldingen: logo’s, hero’s, avatars, thumbnails, …
-    - Iconen: vergrootglas, sociale, spinners, favicons, hamburgers, pijlen, …
-    - Formulieren: inputs, textareas, select menu’s, checkboxes, radio buttons, …
-    - Knoppen: groot, klein, primair, secundair, voortgang, …
-    - Interactieve componenten: accordions, tabs, carrousels, alles met bewegende delen
-    - Media: video spelers, audio spelers, …
-    - Berichtgeving: alerts, success, error, warning, validatie, …
-    - Headings: h1, h2, h3, h4, h5, h6 en typografische variaties
-    - Lijsten: ongeordend, geordend, definitielijst, bullets, lijnen, …
-    - 3de partij: widgets, iframes, beurs-tickets, social links, alles wat niet op hetzelfde domein gehost wordt
-    - Reclame: reclame banners en andere reclame elementen
-    - Blokken: combinaties van afbeeldingen, koppen en inleidingen, …
-    - Animatie: gifjes van interface animatie of echt werkende animaties
-    - Kleuren: unieke huisstijlkleuren
-    - …
-4. **Categoriseer jouw screenshots.** Je kunt dit doen terwijl je bezig bent of na afloop van je screenshot sessie. Het doel is dat je alle verschillende voorkomens van een bepaald molecuul naast elkaar kunt zien.
-5. **Presenteer.** Laat als groep de interface inventory zien aan je ~~opdrachtgever~~ docent en kijk toe hoe ze in tranen uitbarsten. Na deze exercitie ga je door met [ontwerpen](#ontwerpen).
+Bekijk per user story relevant studentenwerk uit semester 1.
 
-#### Meer lezen?
+#### Briefing/debriefing
+Schrijf een debriefing. De debriefing is noodzakelijk voor de opdrachtgever om na te gaan of duidelijk is overgekomen wat hij voor ogen had. Maar ook voor jou om te controleren of je alles goed hebt begrepen en geconcretiseerd.
 
-- [Brad Frost, Interface Inventory, 2013](https://bradfrost.com/blog/post/interface-inventory/)
-- [Laure Gabrielle Chatenet, Ousama Jaâfour, How to create an interface inventory? 2017](https://capian.co/blog/interface-inventory/)
-- [Mar High, How to create an interface inventory, 2021](https://mainmatter.com/blog/2021/06/02/how-to-create-an-interface-inventory/)
-- [Brad Frost, Atomic Design, 2013](https://bradfrost.com/blog/post/atomic-web-design/)
+#### Inrichten ontwikkelomgeving
+Fork de deze leertaak en clone het naar je systeem. 
+
+Je gaat een server-side website bouwen met Node/Express/EJS gebaseerd op een REST API met JSON. 
+Installeer de Node ontwikkelomgeving en installeer de packages die je nodig hebt. Maak de files en folders aan die je nodig hebt op de Node server. 
+
+Test de Node server door de JSON van de REST API te fetchen en te loggen. 
+
+### Bronnen analyseerfase
+
+* [Introduction to the server side](https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Introduction)
+* [Client-side vs. Server-side: what’s the difference?](https://medium.com/@donotapply/client-side-vs-server-side-whats-the-difference-a933341cd60e)
+* [Node.js Ultimate Beginner’s Guide in 7 Easy Steps](https://www.youtube.com/watch?v=ENrzD9HAZK4)
+* [Learn JSON in 10 Minutes](https://www.youtube.com/watch?v=iiADhChRriM&t=513s)
+
 
 ### Ontwerpen
+In de ontwerpfase neem je ontwerpbeslissingen en zorg je dat je precies weet wat je moet gaan bouwen.
 
-Je hebt inmiddels vast een beeld bij wat een huisstijl is. De meeste opdrachtgevers van FDND-Agency maken gebruik van een of andere styleguide waarin de huisstijl vastgelegd is. Bekijk als voorbeeld de [huisstijl van de Hogeschool van Amsterdam](https://www.hva.nl/praktisch/algemeen/hva-breed/communicatie/hva-huisstijl/hva-huisstijl.html). Een groot nadeel van traditionele huisstijlhandboeken is dat ze meestal in de vorm van een PDF gemaakt worden. De reden daarvoor is dat ontwerpers dit van oudsher zo gewend zijn te doen. Voor een toegankelijk ontwerp in een responsive omgeving is dit echter niet genoeg. Frontenders willen weten hoe een logo zich gedraagt als er weinig ruimte, een beetje meer ruimte én veel of zelfs heel veel ruimte is. Kortom, we hebben behoefte aan een responsive variant op het klassieke huisstijlhandboek.
+Bijvoorbeeld: het maken van idee-schetsen, wireframes en wireflows tekenen. Content analyseren en onderzoek doen naar semantische HTML elementen die je nodig hebt, hoe je de layout in CSS zou kunnen maken en welke JS en CSS je nodig hebt voor interacties en animaties.
 
-Een *living styleguide* of levende stijlgids biedt het antwoord op de tragisch statische handboeken van weleer. De *living styleguide* is een modern huisstijlhandboek welke in de browser leeft, het is een website over websites van een organisatie. *Living* heeft hierbij een dubbele betekenis. Enerzijds is het een live, toegankelijke en semantische verzameling huisstijlcomponenten. Anderzijds is het een up-to-date huisstijl welke bijgehouden wordt als ontwerpbeslissingen genomen worden, dus *living* in de zin van groei.
+#### Schetsen
+Schets de user story in een wireframe of wireflow. Bepaal de verschillende breakpoints die je nodig hebt.  
 
-Goede voorbeelden van een levende stijlgids zijn de [Decathlon Design System](https://www.decathlon.design/726f8c765/p/75e137-digital-overview) of de  [Familysearch Styleguide](https://www.familysearch.org/frontier/styleguide/) uit een artikel van Steven Lambert op Smashing Magazine. Het artikel staat onderaan bij ‘Meer lezen?’ mocht je het willen lezen.
+Maak een breakdown van de ingewikkelde componenten die je wil maken. Misschien wil je een carousel ontwerpen, of een responsive menu? 
+Welke HTML, CSS en JS heb je daarvoor nodig?
 
-**N.B: Jullie maken één living styleguide per opdrachtgever. Het is aan te raden teamleden als member toe te voegen op één repository en daar in samen te werken. Als het project af is kan je die repository forken om het project op te nemen in je eigen portfolio.**
+Schrijf bij je schets welke elementen statisch zijn en welke elementen dynamsch. 
 
-#### Maak een living styleguide
-Alhoewel bedrijven vaak aandacht besteden aan het uiterlijk van de living styleguide gaat het in dit geval écht om de inhoud. Richt je dus in eerste instantie daar op. In deze repository is een voorbeeldstructuur opgenomen maar deze mag je naar eigen inzicht volledig aanpassen.
+Schrijf bij je schets welke onderdelen van een pagina je in _partials_ kan opdelen.
 
-1. **Kies een categorie** uit de interface inventory en onderzoek of je overeenkomsten kunt ontdekken.  Als je met een team werkt kan je categorieën verdelen. Het is aan te raden in verschillende bestanden te werken.
-2. **Schrijf HTML**. Kies de best passende elementen en neem die met nette, toegankelijke en semantische HTML op in het betreffende bestand.  Blijf zo dicht mogelijk bij het origineel van de opdrachtgever (dus gebruik de originele huisstijl).
-3. **Schrijf CSS**. Schrijf CSS voor de zojuist opgenomen elementen. Zorg dat 
-4. **Maak een voorbeeld** voor frontenders die deze *living styleguide* gebruiken. Het handigste is om dit tussen `<pre>` en `<code>` tags te doen zoals in het onderstaande voorbeeld:\
-```
-<pre>
-<code>
-  <h1>Heading Level 1</h1>
-</code>
-</pre>
-```
-5. **Schrijf uitleg** over hoe de elementen wel en niet gebruikt mogen worden.
-6. **Ga terug naar 1**. Je gaat door tot alle nodige elementen in de *living styleguide* zijn opgenomen.
 
-#### Meer lezen?
+### Bouwen
+In de bouwfase realiseer je de beslissingen uit de ontwerpfase.
 
-- [Steven Lambert, Creating A Living Style Guide, 2016](https://www.smashingmagazine.com/2016/05/creating-a-living-style-guide-case-study/)
+Je bouwt de website met Node, Express en EJS op de server en je gebruikt client-side technieken HTML, CSS of JS voor het responsive ontwerp of interactieve funcionaliteiten.
+
+
+#### Bronnen bouwfase
+
+<!-- * [Using EJS template engine with Express.js](https://www.topcoder.com/thrive/articles/using-ejs-template-engine-with-express-js) -->
+<!-- * [Rendering Views with Node, Express, and EJS](https://medium.com/@bloomaman/rendering-views-with-node-express-and-ejs-415af1493c74) -->
+* [Master EJS template engine with Node.js and Expressjs](https://medium.com/swlh/master-ejs-template-engine-with-node-js-and-expressjs-979cc22b69be)
+* [How to Use JSON in Node.js](http://www.jsonexample.com/how-to-use-json-in-node-js/)
+
+
+
+
+### Integreren
+In de integratiefase voer je de aanpassingen door zodat iedereen ze kan zien.
+
+Als je helemaal klaar bent en alles lokaal werkt ga je verder met het publiceren van jouw project op internet. Omdat we met Node werken is dit iets ingewikkelder dan voorheen, er moet namelijk een serveromgeving opgestart worden. Wij gebruiken cyclic.sh als hostingpartij maar je mag natuurlijk je eigen voorkeur volgen als die anders is.
+
+
+### Testen
+In de testfase controleer je of jouw aanpassingen werken zoals bedoeld en pas je zo nodig jouw ontwerp of de code aan om te beantwoorden aan jouw bevindingen.
+
+Bijvoorbeeld: uitvoeren van code/design reviews, user tests met gebruikers, toegankelijkheid testen met lighthouse en handmatige tests, je bevindingen documenteren en bepalen of je nog een iteratie maakt.
+
+
+
 
 ## Criteria
+*Definitions of done*
 
-Focus sprint 4 - De focus van deze sprint ligt op het toepassen van een huisstijl en het maken van formulieren.
+Focus sprint 8 - De focus van deze sprint ligt op het maken van een opdracht voor een opdrachtgever, leren hoe je op de server data kunt laden en presenteren.
 
-Deze deeltaak hoort bij het gedragscriterium:  
+Doel van deze opdracht:
 
-Samenwerken: Draagt verantwoording voor eigen resultaten en verwerkt ontvangen feedback.
+* Je leert hoe je server-side data kunt gebruiken voor het maken van een website.
+
+Voor deze leertaak gelden de gedragscriteria:
+
+* C: Je luistert en vraagt door, neemt wat een ander zegt serieus
+* C: Je kan ontwerpkeuzes, eigen ideeën en producten begrijpelijk overbrengen aan belanghebbenden
+* P: Je combineert aangeboden principes en conventies op het gebied van frontend, interface design en vormgeving om een passende oplossing voor een opdrachtgever te realiseren
+* ~~L: Je volgt aangeboden internationale ontwikkelingen in het vakgebied~~
 
 Deze opdracht is done als:
 
-- [ ] een Interface Inventory is opgenomen in de wiki
-- [ ] een living styleguide is gemaakt met HTML en CSS
-- [ ] de living styleguide te bekijken is via Github pages
+- [ ] Je hebt een website ontworpen en gemaakt met Node, Express en EJS en een REST API
+- [ ] Je website is online gepubliceerd
+- [ ] Je hebt je proces bijgehouden in de Wiki
+- [ ] Je toont aan dat je in de analysefase verschillende methoden en technieken hebt ingezet om te inventariseren wat er moet gebeuren
+- [ ] Je toont aan dat je in de ontwerpfase verschillende methoden en technieken hebt ingezet die ervoor zorgen dat je precies weet wat je moet bouwen
+- [ ] Je toont aan dat je in de bouwfase verschillende server-side en client-side methoden en technieken hebt ingezet om het ontwerp te realiseren
 
