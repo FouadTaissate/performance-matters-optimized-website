@@ -23,11 +23,10 @@ server.get("/", (request, response) => {
     response.render("index", data);
   });
 });
-
+console.log("HOI");
 server.get("/method/:slug", (request, response) => {
   let detailPageUrl = url + "method/" + request.params.slug;
   const id = request.query.id;
-
   fetchJson(detailPageUrl).then((data) => {
     response.render("method", data);
   });
@@ -51,7 +50,6 @@ server.get("/method/:slug/steps", (request, response) => {
 
 server.get("/method/:slug/examples", (request, response) => {
   let detailPageUrl = url + "method/" + request.params.slug;
-
   fetchJson(detailPageUrl).then((data) => {
     response.render("examples", data);
   });
