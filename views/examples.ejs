@@ -5,7 +5,7 @@
 
     <% if (method.examples.length) { %>   
     <% method.examples.forEach(example => { %>   
-    <img src="<%= example.smallAsWebP %>" onerror="this.src='assets/logo.svg';" class="image-example" alt="foto van <%= method.title %>" />
+    <img src="<%= example.originalAsWebP %>" onerror="this.src='assets/logo.svg';" class="image-example" alt="foto van <%= method.title %>" />
      <% }) %>  
      <% } else { %>
         <h4>
