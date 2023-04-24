@@ -32,14 +32,6 @@ server.get("/method/:slug", (request, response) => {
   });
 });
 
-server.get("/method/:slug/description", (request, response) => {
-  let detailPageUrl = url + "method/" + request.params.slug;
-
-  fetchJson(detailPageUrl).then((data) => {
-    response.render("description", data);
-  });
-});
-
 server.get("/method/:slug/steps", (request, response) => {
   let detailPageUrl = url + "method/" + request.params.slug;
 

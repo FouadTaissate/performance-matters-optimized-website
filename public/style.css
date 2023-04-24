@@ -1,6 +1,7 @@
 :root {
   --header-font: rigid-square;
   --main-font: yrsa;
+  --button-color: #31439c;
   font-size: 20px;
 }
 
@@ -174,6 +175,10 @@ p {
 
 .nav-button {
   margin-left: 3rem;
+  border: none;
+  background-color: transparent;
+  font-family: var(--header-font);
+  color: var(--button-color);
 }
 
 .image-template-detail-page {
