@@ -2,6 +2,7 @@
   --header-font: rigid-square;
   --main-font: yrsa;
   --button-color: #31439c;
+  --method-detail-color: #feb51e;
   font-size: 20px;
 }
 
@@ -186,6 +187,14 @@ p {
   border: none;
 }
 
+.nav-link-home {
+  padding-left: 6.2rem;
+}
+
+.svg-back {
+  scale: 0.75;
+}
+
 .nav-right {
   margin-right: 3rem;
 }
@@ -200,11 +209,6 @@ p {
   transition-timing-function: ease-in-out;
 }
 
-.nav-button:hover {
-  font-weight: 600;
-  text-decoration: underline 2px;
-}
-
 .main-method-content {
   display: flex;
   width: 100%;
@@ -213,6 +217,11 @@ p {
 .article-details {
   /* border: none; */
   width: 100%;
+}
+
+.p-method-duration, .p-method-material {
+  background-color: var(--method-detail-color);
+  font-family: var(--header-font);
 }
 
 .article-template {
