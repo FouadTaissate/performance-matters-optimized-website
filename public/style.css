@@ -275,8 +275,13 @@ fieldset {
   flex-direction: column;
   gap: 20px;
   width: 50%;
-  height: 13rem;
+  min-height: 1rem;
   padding: 1em;
+}
+
+textarea {
+  font-family: var(--main-font);
+  font-size: 1rem;
 }
 
 input {
