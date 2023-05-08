@@ -11,7 +11,7 @@
                     <li>
                         <div class="message">
                             <h4 class="message-author">
-                            <%= comment.author %>
+                            <%= comment.author %>:
                             </h4>
                             <p class="message-text">
                             <%= comment.text %>
@@ -36,7 +36,7 @@
                         <input required type="text" name="author" id="author" placeholder="..." />
 
                         <label for="text">Uw feedback</label>
-                        <input required type="text" name="text" id="text" placeholder="..." />
+                        <input class="feedback" required type="text" name="text" id="text" placeholder="..." />
 
                         <label for="methodId"></label>
                         <input type="hidden" name="methodId" id="methodId" value="<%= detail.method.id %>" />
