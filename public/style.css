@@ -1,6 +1,7 @@
 :root {
   --header-font: rigid-square;
   --main-font: yrsa;
+  --button-color: #31439c;
   font-size: 20px;
 }
 
@@ -45,10 +46,6 @@ h5 {
 a {
   text-decoration: none;
   color: inherit;
-}
-
-.main-method-content {
-  margin-left: 6rem;
 }
 
 /* Head----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -173,22 +170,48 @@ p {
   margin-bottom: 2rem;
 }
 
+.nav-button-home,
+.nav-link-home {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  background-color: var(--button-color);
+  color: white;
+  text-decoration: none;
+  font-family: var(--header-font);
+  border: none;
+}
+
 .nav-right {
   margin-right: 3rem;
 }
 
 .nav-button {
   margin-left: 3rem;
+  border: none;
+  background-color: transparent;
+  font-family: var(--header-font);
+  color: var(--button-color);
 }
 
-.image-template-detail-page {
-  max-width: 20rem;
-  max-height: 20rem;
+.main-method-content {
+  display: flex;
+  width: 100%;
 }
 
 .article-details {
   /* border: none; */
   width: 100%;
+}
+
+.article-template {
+  max-width: 20rem;
+  max-height: 20rem;
+}
+
+.image-template-detail-page {
+  max-width: 20rem;
+  max-height: 20rem;
 }
 
 .article-steps {

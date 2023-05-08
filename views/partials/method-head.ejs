@@ -30,24 +30,25 @@
      </div>
     </header>
 
-    <nav class="nav-method">
+<button class="nav-button-home" type="button">
+  <a href="/" class="nav-link-home">Terug naar het overzicht</a>
+</button>
+
+    <nav class="nav-method">  
 <h1> <%= method.title %> </h1>
     <div class="nav-right">
         <button class="nav-button button-template">
-            <a href="/method/<%= method.slug %>?id=<%= method.id %>" class="link-template">Template</a> 
+            <a href="/method/<%= method.slug %>?id=<%= method.id %>" class="link-template">TEMPLATE</a> 
         </button>
-        </button>
-        <button class="nav-button button-description">
-            <a href="/method/<%= method.slug %>/description?id=<%= method.id %>" class="link-description">Beschrijving</a> 
         </button>
         <button class="nav-button button-steps">
-            <a href="/method/<%= method.slug %>/steps?id=<%= method.id %>" class="link-steps">Stappenplan</a> 
+            <a href="/method/<%= method.slug %>/steps?id=<%= method.id %>" class="link-steps">STAPPENPLAN</a> 
         </button>
         <button class="nav-button button-examples">
-            <a href="/method/<%= method.slug %>/examples?id=<%= method.id %>" class="link-examples">Voorbeelden</a> 
+            <a href="/method/<%= method.slug %>/examples?id=<%= method.id %>" class="link-examples">VOORBEELDEN</a> 
         </button>
         <button class="nav-button button-comments"> 
-            <a href="/method/<%= method.slug %>/form?id=<%= method.id %>" class="link-feedback">Feedback</a> 
+            <a href="/method/<%= method.slug %>/form?id=<%= method.id %>" class="link-feedback">FEEDBACK</a> 
         </button>
     </div>
 </nav>
