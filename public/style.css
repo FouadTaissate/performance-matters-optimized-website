@@ -313,10 +313,23 @@ a {
   align-items: center;
 }
 
+.message-author {
+  background-color: var(--method-detail-color);
+}
+
+li {
+  list-style-type: none;
+}
+
 .message-text {
   font-size: 1rem;
   padding-top: 0.3rem;
   padding-left: 0.5rem;
+}
+
+label {
+  font-weight: bold;
+  font-family: var(--header-font);
 }
 
 fieldset {
@@ -331,12 +344,18 @@ fieldset {
 textarea {
   font-family: var(--main-font);
   font-size: 1rem;
+  background-color: #e8e8e8;
 }
 
 input {
   position: relative;
   height: 2rem;
-  line-height: 3rem;
+}
+
+.submit-button {
+  background-color: var(--button-color);
+  text-align: center;
+  color: white;
 }
 
 .feedback {
