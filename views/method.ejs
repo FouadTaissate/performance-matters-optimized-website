@@ -48,8 +48,10 @@
     <article class="article-details article-sources">
         <p class="header-sources">Bronnen</h2>
         <% method.sources.forEach(source => { %>   
+            <div class="div-source">
             <h5 class="header-source"> <%= source.title %> </h5>
             <a href="<%= source.url %>" class="source-link"> <%= source.url %> </a>
+        </div>
          <% }) %> 
     </article>
 </div>

@@ -279,7 +279,7 @@ p {
   font-family: var(--header-font);
 }
 
-.article-steps p{
+.article-steps p {
   font-family: var(--main-font);
 }
 
@@ -295,7 +295,12 @@ p {
 
 .source-link {
   max-width: 35%;
+  font-family: var(--main-font);
   word-break: break-all;
+}
+
+.div-source {
+  padding-bottom: 1rem;
 }
 
 .header-description,
