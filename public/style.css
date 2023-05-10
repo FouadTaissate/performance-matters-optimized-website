@@ -240,6 +240,8 @@ p {
 .detail-line {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  margin-bottom: 1.5rem;
 }
 
 .icon {
@@ -253,8 +255,6 @@ p {
 .p-method-category {
   font-family: var(--header-font);
   margin-right: 1rem;
-  margin-bottom: 1rem;
-  align-self: center;
 }
 
 .article-template {
