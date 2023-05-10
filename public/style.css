@@ -306,6 +306,10 @@ a {
 /* Feedback---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* Feedback---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
+.article-feedback {
+  margin-left: 6rem;
+}
+
 .message {
   display: flex;
   margin-top: 1.5rem;
@@ -339,6 +343,7 @@ fieldset {
   width: 50%;
   min-height: 1rem;
   padding: 1em;
+  margin-left: 6rem;
 }
 
 textarea {
@@ -380,6 +385,14 @@ input {
 
 @media only screen and (max-width: 600px) {
   .nav-method {
+    margin-left: 2rem;
+  }
+
+  .article-feedback {
+    margin-left: 2rem;
+  }
+
+  fieldset {
     margin-left: 2rem;
   }
 }
