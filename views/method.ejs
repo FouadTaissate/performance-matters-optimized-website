@@ -9,15 +9,31 @@
     
     <article class="article-details article-material">
         <div class="detail-lines">
+            <div class="detail-line">
+            <img class="icon" src="/assets/categorie.svg" alt="categorie">
+            <% method.categories.forEach(category=> { %>
+                <p class="p-method-category">
+                    <%= category?.title %>
+                </p>
+            <% }) %>  
+        </div>
+        <div class="detail-line">
         <img class="icon" src="/assets/benodigdheden.svg" alt="benodigdheden">
         <p class="p-method-material">
             <%= method.material %>
         </p>
+    </div>
+    <div class="detail-line">
         <img class="icon" src="/assets/duur.svg" alt="duur">
         <p class="p-method-duration">
             <%= method.duration %>
         </p>
     </div>
+    <div class="detail-line">
+        <img class="icon" src="/assets/auteur.svg" alt="auteur">
+        <p class="p-method-author">Charley Muhren</h2>
+    </div>
+</div>
     </article>
     
     <article class="article-details article-description">
