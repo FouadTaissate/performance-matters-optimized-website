@@ -311,7 +311,7 @@ input {
   }
 }
 
-@media only screen and (max-width: 400) {
+@media only screen and (max-width: 600px) {
   .nav-method {
     margin-left: 2rem;
   }
