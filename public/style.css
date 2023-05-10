@@ -219,7 +219,8 @@ p {
   width: 100%;
 }
 
-.p-method-duration, .p-method-material {
+.p-method-duration,
+.p-method-material {
   background-color: var(--method-detail-color);
   font-family: var(--header-font);
 }
@@ -307,5 +308,11 @@ input {
 @media only screen and (max-width: 900px) {
   .layout {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (max-width: 400) {
+  .nav-method {
+    margin-left: 2rem;
   }
 }
