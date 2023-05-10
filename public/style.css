@@ -49,6 +49,10 @@ a {
   color: inherit;
 }
 
+p {
+  line-height: 30px;
+}
+
 /* Head----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* Head----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* Head----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -211,12 +215,21 @@ p {
 
 .main-method-content {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
+  margin-left: 6rem;
 }
 
 .article-details {
-  /* border: none; */
-  width: 100%;
+  border: 1px black solid;
+  min-width: 35%;
+  max-width: 35%;
+  padding: 2rem;
+}
+
+.detail-lines {
+  display: flex;
 }
 
 .p-method-duration,
@@ -235,6 +248,10 @@ p {
   max-height: 20rem;
 }
 
+.p-method-description {
+  font-family: var(--main-font);
+}
+
 .article-steps {
   display: flex;
   flex-direction: column;
@@ -249,6 +266,11 @@ p {
 .image-example {
   max-width: 20rem;
   max-height: 20rem;
+}
+
+.source-link {
+  max-width: 35%;
+  word-break: break-all;
 }
 
 a {
