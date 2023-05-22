@@ -18,7 +18,7 @@ Deze website is een overzicht van alle werkvormen van Visual Thinking. Ook kan j
 <!-- Voeg een link toe naar Github Pages 🌐-->
 
 ### Link naar de website
-https://lazy-gold-vulture-toga.cyclic.app/
+[https://lazy-gold-vulture-toga.cyclic.app/](https://curious-boa-lapel.cyclic.app/)
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
